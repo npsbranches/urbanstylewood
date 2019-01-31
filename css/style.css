@@ -60,7 +60,7 @@ textarea {
 .header-top .wrapper {
     display: flex;
     align-items: center;
-    height: 46px;
+    height: 50px;
     justify-content: space-between;
 }
 
