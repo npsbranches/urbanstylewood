@@ -8,7 +8,6 @@ html,
 body {
     font-family: 'Montserrat', sans-serif;
     color: #252525;
-    color: #301341;
 }
 
 a {
@@ -49,7 +48,7 @@ textarea {
 
 .btn-bars i{
     font-size: 22px;
-    color: #301341;
+    color: #252525;
 }
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * HEADER * * * * * * * * * * * * * * * * * * * * * * * * * */
@@ -113,7 +112,6 @@ textarea {
 
 .navbar-buttons i {
     color: #464646;
-    color: #301341;
 }
 
 .menu ul {
