@@ -7,7 +7,7 @@
 html,
 body {
     font-family: 'Montserrat', sans-serif;
-    color: #252525;
+    color: #333333;
 }
 
 a {
@@ -48,14 +48,13 @@ textarea {
 
 .btn-bars i{
     font-size: 22px;
-    color: #252525;
+    color: #333333;
 }
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * HEADER * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 .header-top {
-    background: #301341;
-    /* background: #7E4071; */
+    background: #333333;
 }
 
 .header-top .wrapper {
@@ -111,7 +110,7 @@ textarea {
 }
 
 .navbar-buttons i {
-    color: #464646;
+    color: #333333;
 }
 
 .menu ul {
@@ -123,7 +122,7 @@ textarea {
 }
 
 .menu ul li a {
-    color: #252525;
+    color: #333333;
     font-size: 12px;
     text-transform: uppercase;
     font-weight: 600;
@@ -194,7 +193,7 @@ textarea {
 }
 
 .services-card i {
-    color: #252525;
+    color: #333333;
     font-size: 32px;
     margin-right: 10px;
 }
@@ -233,7 +232,6 @@ textarea {
 
     .services-card {
         justify-content: flex-start;
-        /* margin: auto; */
         margin: 10px 0;
         width: 240px;
     }
