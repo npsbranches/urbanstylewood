@@ -60,7 +60,7 @@ textarea {
 .header-top .wrapper {
     display: flex;
     align-items: center;
-    height: 50px;
+    height: 46px;
     justify-content: space-between;
 }
 
@@ -248,7 +248,7 @@ textarea {
         width: 100%;
     }
     .navbar{
-        min-height: 46px;
+        min-height: 50px;
     }
     .header-shop-buttons {
         position: fixed;
