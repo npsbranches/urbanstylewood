@@ -247,9 +247,9 @@ textarea {
         z-index: 5;
         width: 100%;
     }
-    /* .navbar{
+    .navbar{
         min-height: 50px;
-    } */
+    }
     .header-shop-buttons {
         position: fixed;
         bottom: 0;
