@@ -240,8 +240,8 @@ textarea {
     .header-top {
         display: none;
     }
-    .header-bottom {
-        height: 46px;
+    .navbar{
+        min-height: 46px;
     }
     .header-shop-buttons {
         position: fixed;
