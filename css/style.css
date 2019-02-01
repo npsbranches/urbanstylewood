@@ -143,7 +143,7 @@ textarea {
 }
 
 .hero {
-    height: 630px;
+    height: 550px;
     position: relative;
     display: flex;
     align-items: center;
@@ -200,7 +200,6 @@ textarea {
     margin-right: 10px;
 }
 
-
 .services-card span:first-child {
     font-size: 14px;
     text-transform: uppercase;
@@ -225,7 +224,6 @@ textarea {
     }
 }
 
-
 @media screen and (max-width: 768px) {
     .services .wrapper {
         flex-direction: column;
@@ -242,14 +240,17 @@ textarea {
     .header-top {
         display: none;
     }
+
     .header {
         position: fixed;
         z-index: 5;
         width: 100%;
     }
+
     .navbar{
         min-height: 50px;
     }
+
     .header-shop-buttons {
         position: fixed;
         bottom: 0;
@@ -261,6 +262,7 @@ textarea {
         align-items: center;
         justify-content: center;
     }
+    
     .navbar-buttons a {
         margin: 0 20px;
         flex-basis: 30%;
