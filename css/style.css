@@ -47,12 +47,63 @@ textarea {
     margin: auto;
 }
 
-.btn-bars i {
-    font-size: 22px;
-    color: #333333;
-}
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * BUTTONS * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.btn-bars {
+    position: absolute;
+    right: 15px;
+    z-index: 21;
+    height: 20px;
+    width: 20px;
+    display: none;
+    margin-top: 4px;
+}
+
+.btn-bars span {
+    display: block;
+    height: 3px;
+    background: #333333;
+    border-radius: 2px;
+    position: absolute;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+    width: 20px;
+}
+
+.btn-bars span:first-child {
+    top: 0;
+    width: 20px;
+    border-radius: 5px;
+}
+
+.btn-bars span:nth-child(2) {
+    top: 6px;
+}
+
+.btn-bars span:nth-child(3) {
+    top: 12px;
+}
+
+
+.btn-bars.active span:first-child {
+    top: 34%;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.btn-bars.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.btn-bars.active span:last-child {
+    top: 34%;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
 
 .btn-violet {
     background: #96588A;
@@ -144,7 +195,7 @@ textarea {
     align-items: center;
 }
 
-.navbar-buttons a {
+.navbar-buttons a:not(:last-child) {
     margin-right: 20px;
 }
 
@@ -391,6 +442,7 @@ textarea {
     text-align: center;
     font-weight: 300;
 }
+
 .footer-copyright h6:last-child {
     font-size: 8px;
     margin-top: 5px;
@@ -416,6 +468,7 @@ textarea {
     font-family: 'Montserrat', sans-serif;
     transition: 0.2s;
 }
+
 .footer-column:not(:first-child) a:hover {
     color: #fff;
 }
@@ -425,12 +478,13 @@ textarea {
     flex-direction: column;
 }
 
-.footer-column:last-child a{
+.footer-column:last-child a {
     font-size: 14px;
     margin: 3px 0;
 }
-.footer-column:last-child a i{
-  margin-right: 10px;
+
+.footer-column:last-child a i {
+    margin-right: 10px;
 }
 
 .footer-address {
@@ -438,14 +492,56 @@ textarea {
     padding-bottom: 5px;
     margin-bottom: 10px;
 }
+
 .footer-address p {
     font-size: 14px;
     color: #9c9c9c;
 }
+
 /* * * * * * * * * * * * * * * * * * * * * * * * * * MEDIA * * * * * * * * * * * * * * * * * * * * * * * * * */
 @media screen and (max-width: 1080px) {
     .menu {
-        display: none;
+        display: block;
+        position: fixed;
+        height: 100vh;
+        background: #fff;
+        top: 0;
+        right: 0;
+        width: 100%;
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.2s;
+        z-index: 20;
+
+    }
+
+    .menu.active {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .menu ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    .menu ul li a {
+        font-size: 16px;
+        font-weight: 600;
+        margin: 5px 0;
+        display: inline-block;
+    }
+
+    .btn-bars {
+        display: block;
+    }
+
+    .navbar-buttons {
+
+        padding-right: 50px;
     }
 }
 
@@ -453,8 +549,24 @@ textarea {
     .wrapper {
         max-width: 960px;
     }
+    .bestseller-card {
+        width: 250px;
+    }
+    .bestseller-photo {
+        width: 250px;
+        height: 250px;
+    }
 }
 
+@media screen and (max-width: 992px) {
+    .footer .wrapper {
+        flex-wrap: wrap;
+    }
+    .footer-column {
+        flex-basis: 50%;
+        margin-bottom: 50px;
+    }
+}
 @media screen and (max-width: 768px) {
     .services .wrapper {
         flex-direction: column;
@@ -466,8 +578,43 @@ textarea {
         margin: 10px 0;
         width: 240px;
     }
+    .bestsellers-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    .bestseller-card {
+        width: 400px;
+        margin-bottom: 50px;
+    }
+
+    .bestseller-photo {
+        width: 400px;
+        height: 400px;
+    }
+    .category-card {
+        padding: 0 15px;
+    }
+    .category-card img {
+        height: 60px;
+    }
+    .category-card h3 {
+        font-size: 16px;
+    }
 }
 
+@media screen and (max-width: 576px) {
+    .categories-cards {
+        flex-direction: column;
+    }
+
+    .category-card {
+        margin-bottom: 50px;
+    }
+    .footer-column {
+        flex-basis: 100%;
+        margin-bottom: 50px;
+    }
+}
 @media screen and (max-width: 480px) {
     .header-top {
         display: none;
@@ -508,5 +655,13 @@ textarea {
 
     .btn-bars i {
         font-size: 24px;
+    }
+    .bestseller-card {
+        width: 100%;
+    }
+
+    .bestseller-photo {
+        width: 100%;
+        height: unset;
     }
 }
