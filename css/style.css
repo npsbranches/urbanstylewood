@@ -813,4 +813,7 @@ textarea {
         width: 100%;
         height: unset;
     }
+    .footer {
+        padding-bottom: 70px;
+    }
 }
