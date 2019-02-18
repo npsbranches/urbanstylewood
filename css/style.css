@@ -750,9 +750,7 @@ textarea {
         flex-basis: 100%;
         margin-bottom: 50px;
     }
-}
 
-@media screen and (max-width: 480px) {
     .header-top {
         display: none;
     }
@@ -805,6 +803,14 @@ textarea {
         font-size: 24px;
     }
 
+    .footer {
+        padding-bottom: 70px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+
     .bestseller-card {
         width: 100%;
     }
@@ -813,7 +819,5 @@ textarea {
         width: 100%;
         height: unset;
     }
-    .footer {
-        padding-bottom: 70px;
-    }
+
 }
